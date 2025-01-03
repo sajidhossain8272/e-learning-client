@@ -78,7 +78,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="https://nub.ac.bd/" className="hover:underline font-semibold">
+          <Link to="https://nub.ac.bd/" className="hover:underline font-semibold lg:inline hidden">
             About Us
           </Link>
         </div>
