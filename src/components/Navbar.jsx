@@ -104,9 +104,28 @@ const Navbar = () => {
           >
             About Us
           </Link>
+
+          {/* Mobile Auth Buttons */}
+          <div className="flex flex-col gap-4 mt-4 lg:hidden">
+            {!isLoggedIn ? (
+              <button
+                onClick={handleLogin}
+                className="bg-white text-blue-500 py-2 px-4 rounded hover:bg-blue-700 hover:text-white"
+              >
+                Log In
+              </button>
+            ) : (
+              <button
+                onClick={handleLogout}
+                className="bg-white text-blue-500 py-2 px-4 rounded hover:bg-blue-700 hover:text-white"
+              >
+                Log Out
+              </button>
+            )}
+          </div>
         </div>
 
-        {/* Auth Buttons */}
+        {/* Desktop Auth Buttons */}
         <div className="hidden lg:flex gap-4">
           {!isLoggedIn ? (
             <button
@@ -125,27 +144,6 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-
-      {/* Mobile Auth Buttons */}
-      {isMobileMenuOpen && (
-        <div className="flex flex-col gap-4 mt-4 px-4 lg:hidden">
-          {!isLoggedIn ? (
-            <button
-              onClick={handleLogin}
-              className="bg-white text-blue-500 py-2 px-4 rounded hover:bg-blue-700 hover:text-white"
-            >
-              Log In
-            </button>
-          ) : (
-            <button
-              onClick={handleLogout}
-              className="bg-white text-blue-500 py-2 px-4 rounded hover:bg-blue-700 hover:text-white"
-            >
-              Log Out
-            </button>
-          )}
-        </div>
-      )}
     </header>
   );
 };
