@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import Navbar from "./Navbar";
 
 const Signup = () => {
@@ -8,6 +9,7 @@ const Signup = () => {
     password: "",
   });
   const [message, setMessage] = useState(""); // To display success/error messages
+  const navigate = useNavigate(); // Initialize useNavigate
 
   // Handle form input changes
   const handleChange = (e) => {
@@ -43,6 +45,9 @@ const Signup = () => {
 
       // Success message
       setMessage(`Registration successful! Welcome, ${data.user.name}`);
+
+      // Redirect to login page
+      setTimeout(() => navigate("/login"), 2000); // Redirect after 2 seconds
 
       // Clear the form
       setFormData({
@@ -141,6 +146,19 @@ const Signup = () => {
             Register
           </button>
         </form>
+
+        {/* Login Redirect Link */}
+        <div className="text-center mt-6">
+          <p>
+            Already signed up?{" "}
+            <a
+              href="/login"
+              className="text-blue-500 hover:underline"
+            >
+              Login here
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
