@@ -12,7 +12,7 @@ const Dashboard = () => {
     const token = localStorage.getItem("token");
     if (!token) return;
 
-    fetch("http://localhost:5000/api/profile", {
+    fetch("https://study-lab-server-side.vercel.app/api/profile", {
       headers: { Authorization: token },
     })
       .then((response) => response.json())
@@ -33,7 +33,7 @@ const Dashboard = () => {
     e.preventDefault();
 
     const token = localStorage.getItem("token");
-    fetch("http://localhost:5000/api/profile/update", {
+    fetch("https://study-lab-server-side.vercel.app/api/profile/update", {
       method: "POST",
       headers: {
         Authorization: token,

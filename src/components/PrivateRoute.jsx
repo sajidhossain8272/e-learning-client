@@ -10,7 +10,7 @@ const PrivateRoute = ({ children }) => {
     const token = localStorage.getItem("token");
     if (token) {
       // Verify token with backend (optional)
-      fetch("http://localhost:5000/api/protected", {
+      fetch("https://study-lab-server-side.vercel.app/api/protected", {
         headers: {
           Authorization: token,
         },
