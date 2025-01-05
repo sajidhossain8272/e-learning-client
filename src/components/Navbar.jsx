@@ -97,6 +97,12 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+          <Link
+            to="/faculty"
+            className="hover:underline font-semibold py-2 px-4 lg:py-0"
+          >
+            Faculty
+          </Link>
 
           <Link
             to="https://nub.ac.bd/"
@@ -105,12 +111,7 @@ const Navbar = () => {
             About Nub
           </Link>
 
-          <Link
-            to="/faculty"
-            className="hover:underline font-semibold py-2 px-4 lg:py-0"
-          >
-            Faculty
-          </Link>
+         
 
           {/* Mobile Auth Buttons */}
           <div className="flex flex-col gap-4 mt-4 lg:hidden">
