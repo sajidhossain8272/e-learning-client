@@ -102,7 +102,14 @@ const Navbar = () => {
             to="https://nub.ac.bd/"
             className="hover:underline font-semibold py-2 px-4 lg:py-0"
           >
-            About Us
+            About Nub
+          </Link>
+
+          <Link
+            to="/faculty"
+            className="hover:underline font-semibold py-2 px-4 lg:py-0"
+          >
+            Faculty
           </Link>
 
           {/* Mobile Auth Buttons */}

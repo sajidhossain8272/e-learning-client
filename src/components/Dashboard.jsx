@@ -166,7 +166,7 @@ const Dashboard = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-blue-500 text-white rounded-lg shadow-md p-6 text-center">
             <h3 className="text-xl font-bold mb-2">Online Modules</h3>
-            <p className="mb-6">Access your study modules and track your progress.</p>
+            <p className="mb-6">Explore a variety of engaging quizzes to test your knowledge and enhance your learning experience.</p>
             <Link to="/online-modules" className="bg-white text-blue-500 py-2 px-4 rounded">
               View Modules
             </Link>
@@ -180,7 +180,7 @@ const Dashboard = () => {
           </div>
           <div className="bg-green-500 text-white rounded-lg shadow-md p-6 text-center">
             <h3 className="text-xl font-bold mb-2">Lessons</h3>
-            <p className="mb-6">Browse through detailed lessons curated by experts.</p>
+            <p className="mb-6">Browse through engaging video tutorials curated by experts to enhance your learning experience</p>
             <Link to="/lessons" className="bg-white text-green-500 py-2 px-4 rounded">
               View Lessons
             </Link>

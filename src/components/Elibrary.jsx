@@ -189,7 +189,7 @@ const Elibrary = () => {
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white py-2 px-4 rounded mt-auto text-center"
               >
-                Learn More
+                Read More
               </a>
             </div>
           ))}
