@@ -6,6 +6,8 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
 import Elibrary from "./components/Elibrary";
+import OnlineModules from "./components/OnlineModules";
+import Lessons from "./components/Lessons";
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/e-library" element={<Elibrary />} />
+        <Route path="/online-modules" element={<OnlineModules />} />
+        <Route path="/lessons" element={<Lessons />} />
+
+
 
 
         <Route

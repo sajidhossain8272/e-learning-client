@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [profile, setProfile] = useState(null);
@@ -164,26 +165,33 @@ const Dashboard = () => {
         {/* Modules, Lessons, and Courses Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-blue-500 text-white rounded-lg shadow-md p-6 text-center">
-            <h3 className="text-xl font-bold mb-2">Modules</h3>
-            <p className="mb-4">Access your study modules and track your progress.</p>
-            <button className="bg-white text-blue-500 py-2 px-4 rounded">
+            <h3 className="text-xl font-bold mb-2">Online Modules</h3>
+            <p className="mb-6">Access your study modules and track your progress.</p>
+            <Link to="/online-modules" className="bg-white text-blue-500 py-2 px-4 rounded">
               View Modules
-            </button>
+            </Link>
+          </div>
+          <div className="bg-rose-500 text-white rounded-lg shadow-md p-6 text-center">
+            <h3 className="text-xl font-bold mb-2">E-Library</h3>
+            <p className="mb-6">Access thousands of books and resources online. Expand your knowledge with just a click.</p>
+            <Link to="/e-library" className="bg-white text-blue-500 py-2 px-4 rounded">
+              View Modules
+            </Link>
           </div>
           <div className="bg-green-500 text-white rounded-lg shadow-md p-6 text-center">
             <h3 className="text-xl font-bold mb-2">Lessons</h3>
-            <p className="mb-4">Browse through detailed lessons curated by experts.</p>
-            <button className="bg-white text-green-500 py-2 px-4 rounded">
+            <p className="mb-6">Browse through detailed lessons curated by experts.</p>
+            <Link to="/lessons" className="bg-white text-green-500 py-2 px-4 rounded">
               View Lessons
-            </button>
+            </Link>
           </div>
-          <div className="bg-purple-500 text-white rounded-lg shadow-md p-6 text-center">
+          {/* <div className="bg-purple-500 text-white rounded-lg shadow-md p-6 text-center">
             <h3 className="text-xl font-bold mb-2">Courses</h3>
             <p className="mb-4">Explore and enroll in courses tailored to your interests.</p>
             <button className="bg-white text-purple-500 py-2 px-4 rounded">
               View Courses
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

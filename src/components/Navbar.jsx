@@ -79,17 +79,17 @@ const Navbar = () => {
                 E-Library
               </Link>
               <div className="relative">
-                <button className="block w-full text-left px-4 py-2 hover:bg-blue-500 hover:text-white">
+                {/* <button className="block w-full text-left px-4 py-2 hover:bg-blue-500 hover:text-white">
                   Course
-                </button>
+                </button> */}
                 <Link
-                  to="/course/modules"
+                  to="/online-modules"
                   className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
                 >
-                  Modules
+                  Online Modules
                 </Link>
                 <Link
-                  to="/course/lessons"
+                  to="/lessons"
                   className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
                 >
                   Lessons

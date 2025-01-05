@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { FaBook, FaLaptopCode, FaChalkboardTeacher } from "react-icons/fa"; // Import icons
@@ -44,34 +45,34 @@ const Home = () => {
         className="flex flex-wrap justify-center gap-8 py-16 bg-white"
       >
         {/* E-Library */}
-        <div className="text-center flex flex-col items-center max-w-xs">
+        <Link to="e-library" className="text-center flex flex-col items-center max-w-xs shadow-lg rounded-lg p-4 hover:bg-gray-50">
           <FaBook className="text-blue-500 text-6xl mb-4" />
           <h2 className="text-2xl font-semibold mb-4">E-Library</h2>
           <p className="text-lg">
             Access thousands of books and resources online. Expand your
             knowledge with just a click.
           </p>
-        </div>
+        </Link>
 
         {/* Online Modules */}
-        <div className="text-center flex flex-col items-center max-w-xs">
+        <Link to="/online-modules" className="text-center flex flex-col items-center max-w-xs shadow-lg rounded-lg p-4 hover:bg-gray-50">
           <FaLaptopCode className="text-blue-500 text-6xl mb-4" />
           <h2 className="text-2xl font-semibold mb-4">Online Modules</h2>
           <p className="text-lg">
             Structured online modules designed to support your academic journey.
             Learn at your own pace.
           </p>
-        </div>
+        </Link>
 
         {/* Lessons */}
-        <div className="text-center flex flex-col items-center max-w-xs">
+        <Link to="/lessons" className="text-center flex flex-col items-center max-w-xs shadow-lg rounded-lg p-4 hover:bg-gray-50">
           <FaChalkboardTeacher className="text-blue-500 text-6xl mb-4" />
           <h2 className="text-2xl font-semibold mb-4">Lessons</h2>
           <p className="text-lg">
             Detailed lessons crafted by experts to give you an in-depth
             understanding of every topic.
           </p>
-        </div>
+        </Link>
       </section>
 
       {/* Footer */}
